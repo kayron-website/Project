@@ -1,0 +1,111 @@
+.contains {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 110px;
+  margin-left: 16%;
+}
+
+.box {
+  width: 350px;
+  padding: 20px;
+  perspective: 1000px;
+  height: 80px;
+  margin-top: -30px;
+  margin-bottom: 250px;
+}
+
+.card {
+  padding-top: 30px;
+  border: 0px solid #040d37;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  background-size: 60px 60px;
+  background-color: #040d37;
+  width: 100%;
+  box-shadow: rgba(56, 36, 36, 0.3) 13px 13px 19px 0px;
+}
+
+.content-box {
+  background: #f2f2f2;
+  transition: all 0.5s ease-in-out;
+  padding: 60px 25px 25px 25px;
+  transform-style: preserve-3d;
+  height: 200px;
+  width: 100%;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.content-box .card-title {
+  display: inline-block;
+  color: black;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.date-box {
+  position: absolute;
+  border-radius: 10px;
+  top: 5px;
+  right: 91%;
+  height: 50px;
+  background: #000;
+  border: 0px solid #000;
+  padding: 10px;
+  transform: translate3d(0px, 0px, 80px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+}
+
+.date-box span {
+  display: block;
+  text-align: center;
+}
+
+.date-box .date {
+  font-size: 20px;
+  font-weight: 900;
+  color: #EDF1D6;
+}
+
+.btn {
+  position: absolute;
+  top: 74%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: 400;
+  height: 30px;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  color: #1d1d1d;
+}
+
+.btn:hover .mem {
+  height: inherit;
+  width: 110%;
+  top: 67%;
+  color: #f2f2f2;
+}
+
+.btn:hover {
+  color: #f2f2f2;
+}
+
+.btn .mem {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px;
+  width: 100%;
+  background-color: #FC6A03;
+  color: #f2f2f2;
+  z-index: -1;
+  border-radius: 5px;
+  transition: all 0.3s;
+}

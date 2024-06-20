@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent gradient overflow */
+    background: linear-gradient(135deg, #f17006fd 0%, #0a8a0efd 100%);
+}
+.container{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 5px 100px -80px #000;
+}
+.image_box{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    background-color: #f17006fd;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+}
+.image_box img{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 1250px;
+    transform: translate(-50% , -50%);
+}
+.box{
+    width: 400px;
+    margin: 10px;
+    padding: 15px;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    position: relative;
+}
+h2::before{
+    position: absolute;
+    content: "";
+    margin-left: 25%;
+    width: 110px;
+    height: 6px;
+    border-radius: 100px;
+    background-color: #f17006fd;
+    bottom: -8px;  
+}
+.box form .input_box{
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #f17006fd;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.box form .input_box input{
+    width: 100%;
+    font-size: 20px;
+    padding: 6px 0px;
+    outline: none;
+    border: none;
+}
+.box form .input_box label{
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    font-size: 20px;
+    color: #aaaaaa;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.box form .input_box input:focus + label,
+.box form .input_box input:valid + label{
+    top: -18px;
+    color: #9bcd92;
+    font-size: 18px;
+}
+.box form .checkbox{
+    display: inline-flex;
+    font-size: 16px;
+    cursor: pointer;
+}
+.box form .checkbox p{
+    margin-left: 8px;
+}
+.box form .forgot_password_box{
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+}
+.box form .forgot_password_box .forgot_password a{
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0a8a0efd;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.box form .login_button {
+    width: 100%;
+    background-color: #0a8a0efd;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 16px;
+    margin-top: 30px;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.box form .login_button:hover {
+    background-color: #f17006fd; /* Change to desired green color */
+}
+
+.box form .link_box{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.box form .link_box .signup_link,
+.box form .link_box .link,
+.box form .link_box .contact_link{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.box form .link_box .signup_link a,
+.box form .link_box .link a,
+.box form .link_box .contact_link a{
+    text-decoration: none;
+    color: #9bcd92;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.box form .link_box .signup_link a:hover,
+.box form .link_box .link a:hover,
+.box form .link_box .contact_link a:hover,
+.box form .forgot_password_box .forgot_password a:hover{
+    text-decoration: underline;
+}
+
+.pic{
+    height: 15%;
+    width: 8%;
+    position: absolute;
+    margin-top: -115px;
+    margin-left: 138px;
+}
