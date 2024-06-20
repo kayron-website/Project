@@ -1,0 +1,53 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 12px;
+  gap: 8px;
+  height: 45px;
+  width: 150px;
+  border: none;
+  background: #fc6a0394;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 35%;
+  margin-top: 30px;
+}
+
+.lable {
+  line-height: 22px;
+  font-size: 15px;
+  color: #000;
+  margin-left: 20px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.buttons .span {
+  border-radius: 45%;
+  background-color: #FC6A03;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+}
+
+.buttons:hover {
+  background: #FC6A03;
+}
+
+.buttons:hover .svg-icon {
+  animation: slope 0.8s linear infinite;
+}
+
+@keyframes slope {
+  0% {
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+  }
+}

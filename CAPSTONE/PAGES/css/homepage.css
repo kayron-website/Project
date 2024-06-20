@@ -1,0 +1,53 @@
+div{
+	display: inline-block;
+}
+/* Main Section */
+.main_1{
+	display: inline-block;
+	margin-left: 10px;
+}
+.main_2{
+	display: inline-block;
+	margin-left: -180px;
+}
+h1{
+  margin: 20px 10px;
+}
+h2 {
+  color: #fffffe
+}
+.job_card{
+  width: 70%;
+  padding: 90px;
+  display: flex;
+  border-radius: 10px;
+  background: #80ab6a;
+  margin-top: 80px;
+  margin-left: 275px;
+  margin-bottom: 0px;
+  justify-content: space-between;
+  border: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+.job_details{
+  display: flex;
+}
+.job_details .img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.job_details .img i{
+  width: 70px;
+  font-size: 5rem;
+  margin-left: 1rem;
+  padding: 10px;
+  color: rgb(82, 22, 138);
+}
+.job_details .text{
+  margin-left: 2.3rem;
+}
+.job_details .text span{
+  color: #ffffff;
+  font-size: larger;
+}
